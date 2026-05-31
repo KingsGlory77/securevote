@@ -49,5 +49,6 @@ Jika Anda menemukan bug, memiliki ide peningkatan fitur, atau ingin berdiskusi m
 ## Author
 
 Yoseph Delimda 
+
 Informatics Student | Cyber Security Enthusiast | Security Engineer
 
