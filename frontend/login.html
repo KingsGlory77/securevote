@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVote - Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center min-vh-100 align-items-center">
+            <div class="col-md-5 col-lg-4">
+                <div class="card shadow">
+                    
+                    <!-- Card Body Login -->
+                    <div class="card-body p-4" id="loginCardBody">
+                        <h2 class="text-center mb-4 text-white fw-bold">
+                            SecureVote
+                        </h2>
+
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label text-secondary">
+                                    Username
+                                </label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label text-secondary">
+                                    Password
+                                </label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="form-control"
+                                    required
+                                >
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="loginRole" class="form-label text-secondary">
+                                    Login Sebagai
+                                </label>
+                                <select id="loginRole" class="form-select" required>
+                                    <option value="user">Pengguna (Voter)</option>
+                                    <option value="admin">Administrator</option>
+                                </select>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100"
+                            >
+                                Login
+                            </button>
+                        </form>
+
+                        <div class="text-center mt-4">
+                            <a href="register.html" class="text-secondary small">
+                                Belum punya akun? Daftar sekarang
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card Body OTP (Tersembunyi secara default) -->
+                    <div class="card-body p-4 d-none" id="otpCardBody">
+                        <div class="text-center mb-4">
+                            <h3 class="text-white fw-bold">Verifikasi 2FA</h3>
+                            <p class="text-secondary small">Masukkan 6 digit kode OTP yang dikirimkan ke email Anda.</p>
+                        </div>
+
+                        <form id="otpForm">
+                            <div class="otp-container">
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                                <input type="text" class="otp-input" maxlength="1" pattern="[0-9]" required>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-success w-100 mb-2"
+                            >
+                                Verifikasi
+                            </button>
+                            
+                            <button
+                                type="button"
+                                id="backToLoginBtn"
+                                class="btn btn-outline-light w-100 btn-sm"
+                            >
+                                Batal
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mock Email Toast Alert Notification -->
+    <div id="mockEmailToast" class="mock-email-toast">
+        <div class="mock-email-header">
+            <span>✉️</span>
+            <span>Mock Email Notification</span>
+        </div>
+        <div class="mock-email-body">
+            Halo, kode OTP keamanan SecureVote Anda adalah: 
+            <strong id="mockOtpValue" class="text-white font-monospace fs-5 ms-1">------</strong>
+        </div>
+    </div>
+
+    <script src="../assets/js/auth.js"></script>
+
+</body>
+
+</html>
