@@ -33,6 +33,9 @@ Project ini dibuat sebagai portofolio untuk menunjukkan implementasi dasar auten
 3. Simpan project di folder `htdocs`.
 4. Buka aplikasi melalui browser.
 
+## Screenshot UI
+<img width="2536" height="1410" alt="image" src="https://github.com/user-attachments/assets/df47ce79-c90d-4b66-8ccd-1f746df23f5d" />
+
 
 ## Disclaimer / Batasan Simulasi
 
