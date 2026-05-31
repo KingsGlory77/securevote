@@ -1,5 +1,3 @@
-<img width="2536" height="1410" alt="image" src="https://github.com/user-attachments/assets/49c19711-4a9b-4eda-bbce-de7e0cdf3a3c" /># SecureVote
-
 SecureVote adalah aplikasi e-voting berbasis web yang menerapkan konsep blockchain sederhana untuk menjaga integritas data suara. Setiap suara yang masuk akan disimpan dalam bentuk hash dan dihubungkan dengan block sebelumnya menggunakan algoritma SHA-256.
 
 Project ini dibuat sebagai portofolio untuk menunjukkan implementasi dasar autentikasi pengguna, sistem voting, database MySQL, serta konsep blockchain sederhana pada aplikasi web.
